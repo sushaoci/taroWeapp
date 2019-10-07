@@ -1,8 +1,8 @@
 {
-	"miniprogramRoot": "./dist",
+	"miniprogramRoot": "dist/",
 	"projectname": "taro-dvajs",
 	"description": "taro-dvajs",
-	"appid": "",
+	"appid": "wx665dd0d1c9c7d850",
 	"setting": {
 		"urlCheck": false,
 		"es6": false,
@@ -11,5 +11,7 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {}
 }
