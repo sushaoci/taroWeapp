@@ -21,6 +21,7 @@ export default class Question extends Component {
   render () {
     return (
         <View>
+          {/* 邀请回答/写回答👆的部分 */}
           <View className='question-wrp'>
               <View className='question-item'>
                   <View className='que-tag'>
@@ -63,6 +64,7 @@ export default class Question extends Component {
                   </View>
               </View>
           </View>
+          {/* 回答的部分 */}
           <View className='answer-feed'>
               <View className='feed-item'>
                   <View className='feed-source'>

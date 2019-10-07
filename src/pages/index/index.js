@@ -14,6 +14,9 @@ import action from '../../utils/action'
   isLoadMore: loading.effects["feeds/loadMore"],
 }))
 export default class Index extends Component {
+  /* 
+  🔴enablePullDownRefresh:是否开启当前页面的下拉刷新
+  */
   config = {
     navigationBarTitleText: '首页',
     enablePullDownRefresh: true,
