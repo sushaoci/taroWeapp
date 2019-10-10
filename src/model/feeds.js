@@ -14,6 +14,15 @@ export default {
       return {...state, list: [...state.list, ...list]};
     },
   },
+  /* 
+  🔴effects处理异步action 
+  第一个参数：
+    action
+  第二个参数：
+    yield => 标识每一步的操作(无论是同步还是异步)))
+    call => 执行异步函数
+    put => 相当于dispatch，发出一个Action
+   */
   effects: {
     * search(_, {all, call, put}) {
       Taro.showLoading({
@@ -22,6 +31,8 @@ export default {
       try {
         let loadPro = yield put(action("load"));
         yield call(() => loadPro);
+      } catch(err) {
+        console.log('there is an error');
       } finally {
         Taro.hideLoading();
       }

@@ -4,10 +4,12 @@ import './index.scss'
 import Feed from '../../components/feed/feed'
 import searchPng from '../../asset/images/search.png'
 import lightingPng from '../../asset/images/lighting.png'
-import {create} from 'dva-core';
 import {connect} from '@tarojs/redux'
 import action from '../../utils/action'
 
+/*
+🔴mapStateToProps=>返回一个对象，用于建立 State 到 Props 的映射关系 
+ */
 @connect(({feeds, loading}) => ({
   ...feeds,
   isLoad: loading.effects["feeds/load"],

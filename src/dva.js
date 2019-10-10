@@ -1,3 +1,4 @@
+/* 🔴dva配置文件 */
 import {create} from 'dva-core';
 import {createLogger} from 'redux-logger';
 import createLoading from 'dva-loading';
@@ -6,7 +7,8 @@ let store;
 let dispatch;
 
 function createApp(opt) {
-  opt.onAction = [createLogger()];
+  // 👍暂时关掉redux-logger
+  // opt.onAction = [createLogger()];
   app = create(opt);
   app.use(createLoading({}));
 
