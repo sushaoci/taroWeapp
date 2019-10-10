@@ -6,6 +6,9 @@ import delay from "../utils/delay";
 export default {
   namespace: 'feeds',
   state: {list: []},
+  /* 
+  🔴 reducer=>根据一个action，将之前的state改变成现在的state
+   */
   reducers: {
     save(state, {payload}) {
       return {...state, ...payload};
