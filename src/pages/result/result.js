@@ -5,6 +5,8 @@ import './result.scss'
 import img from '../../asset/imgs/sample.jpg'
 import { AtCard, AtSlider, AtButton } from "taro-ui"
 
+import navigate from '../../utils/navigate'
+
 export default class Result extends Component {
   config = {
     navigationBarTitleText: '详情页'
@@ -27,7 +29,7 @@ export default class Result extends Component {
         <View className='submit-area'>
           <View className='at-row at-row__justify--around'>
             <View className='at-col at-col-5'>
-              <AtButton type='primary'> 提交</AtButton>
+              <AtButton type='secondary' onClick={console.log('zidong??????')}> 提交</AtButton>
             </View>
           </View>
         </View>
