@@ -9,6 +9,7 @@ import models from './model'
 
 import './app.scss'
 
+import 'taro-ui/dist/style/index.scss' // 全局引入一次即可
 
 const dvaApp = dva.createApp({
   initialState: {},
@@ -33,7 +34,9 @@ class App extends Component {
       'pages/discovery/discovery',
       'pages/more/more',
       'pages/answer/answer',
-      'pages/question/question'
+      'pages/question/question',
+
+      'pages/result/result',
     ],
     window: {
       backgroundTextStyle: 'light',

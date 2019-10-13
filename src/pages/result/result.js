@@ -3,7 +3,7 @@ import { View, Text, Image } from '@tarojs/components'
 import './result.scss'
 
 import img from '../../asset/imgs/sample.jpg'
-import { AtCard , AtSlider} from "taro-ui"
+import { AtCard, AtSlider, AtButton } from "taro-ui"
 
 export default class Result extends Component {
   config = {
@@ -15,14 +15,21 @@ export default class Result extends Component {
         <View className='image-area'>
           <Image src={img} className='image-captured' />
         </View>
-        <View className='name-area'>
+        <View className='result-area'>
           <AtCard
             note='（n千卡/克）'
             extra='（实际多少卡）'
             title='你吃的食物是'
           >
             <AtSlider min={10} max={60}></AtSlider>
-</AtCard>
+          </AtCard>
+        </View>
+        <View className='submit-area'>
+          <View className='at-row at-row__justify--around'>
+            <View className='at-col at-col-5'>
+              <AtButton type='primary'> 提交</AtButton>
+            </View>
+          </View>
         </View>
         {/* <View className='user flex-wrp'>
           <View className='avatar flex-item'>

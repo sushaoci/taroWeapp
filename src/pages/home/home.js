@@ -1,15 +1,27 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text,Image} from '@tarojs/components'
+import { View, Text, Image } from '@tarojs/components'
 import './home.scss'
 
-export default class More extends Component {
+import { AtButton } from 'taro-ui'
+
+export default class Home extends Component {
   config = {
     navigationBarTitleText: '首页'
   }
-  render () {
+  navigateTo(url) {
+    Taro.navigateTo({ url: url })
+  }
+  render() {
     return (
       <View className='home'>
-        <Text>这里是首页</Text>
+        <View className='at-row at-row__justify--around'>
+          <View className='at-col at-col-5'>
+            <AtButton type='primary' onClick={this.navigateTo.bind(this, '/pages/result/result')}> 拍照记录</AtButton>
+          </View>
+          <View className='at-col at-col-5'>
+            <AtButton type='secondary'>相册导入</AtButton>
+          </View>
+        </View>
         {/* <View className='user flex-wrp'>
           <View className='avatar flex-item'>
             <Image className='userinfo-avatar' src='https://image.ibb.co/nKV5Cy/default_avatar.jpg' backgroundSize='cover'></Image>
