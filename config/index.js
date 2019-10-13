@@ -69,6 +69,9 @@ const config = {
           limit: 10240
         }
       }
+    },
+    compile: {
+      exclude: ["node_modules/taro-chart-f2/src/components/f2-canvas/lib/f2.js"]
     }
   },
   h5: {

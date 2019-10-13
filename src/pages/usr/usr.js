@@ -1,9 +1,19 @@
+/* 
+图表有点难加
+参考：
+https://github.com/harrydengchao/taro-chart-f2
+https://github.com/antvis/f2
+ */
+
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Image } from '@tarojs/components'
 import './usr.scss'
 
 import { AtCard, AtList, AtListItem } from 'taro-ui'
 
+const draw = [
+  {chart: null, data: []}
+]
 export default class Usr extends Component {
   config = {
     navigationBarTitleText: '我的'
@@ -31,9 +41,6 @@ export default class Usr extends Component {
               <AtListItem title='标题文字' extraText='详细信息' />
             </AtList>
           </AtCard>
-        </View>
-        <View>
-          
         </View>
       </View>
     )
