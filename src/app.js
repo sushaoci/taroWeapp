@@ -1,6 +1,6 @@
 import '@tarojs/async-await'
-import {Provider} from '@tarojs/redux'
-import Taro, {Component} from '@tarojs/taro'
+import { Provider } from '@tarojs/redux'
+import Taro, { Component } from '@tarojs/taro'
 
 import action from './utils/action'
 import Index from './pages/index'
@@ -29,7 +29,7 @@ class App extends Component {
   */
   config = {
     pages: [
-      'pages/index/index',
+      'pages/home/home',
       'pages/discovery/discovery',
       'pages/more/more',
       'pages/answer/answer',
@@ -48,27 +48,22 @@ class App extends Component {
       backgroundColor: "#FBFBFB",
       borderStyle: "white",
       list: [{
-        pagePath: "pages/index/index",
+        pagePath: "pages/home/home",
         text: "首页",
         iconPath: "./asset/images/index.png",
         selectedIconPath: "./asset/images/index_focus.png"
-      }, {
-        pagePath: "pages/discovery/discovery",
-        text: "发现",
-        iconPath: "./asset/images/discovery.png",
-        selectedIconPath: "./asset/images/discovery_focus.png"
       },
-        {
-          pagePath: "pages/more/more",
-          text: "我的",
-          iconPath: "./asset/images/burger.png",
-          selectedIconPath: "./asset/images/burger_focus.png"
-        }]
+      {
+        pagePath: "pages/more/more",
+        text: "我的",
+        iconPath: "./asset/images/burger.png",
+        selectedIconPath: "./asset/images/burger_focus.png"
+      }]
     }
   }
 
   componentDidMount() {
-    dvaApp.dispatch({type: 'sys/test'})
+    dvaApp.dispatch({ type: 'sys/test' })
   }
 
   componentDidShow() {
@@ -82,9 +77,9 @@ class App extends Component {
 
   render() {
     return (<Provider store={store}>
-      <Index/>
+      <Index />
     </Provider>);
   }
 }
 
-Taro.render(<App/>, document.getElementById('app'))
+Taro.render(<App />, document.getElementById('app'))
