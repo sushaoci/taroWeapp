@@ -31,17 +31,13 @@ class App extends Component {
   config = {
     pages: [
       'pages/home/home',
-      'pages/discovery/discovery',
-      'pages/more/more',
-      'pages/answer/answer',
-      'pages/question/question',
-
       'pages/result/result',
+      'pages/usr/usr',
     ],
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#0068C4',
-      navigationBarTitleText: 'taro知乎',
+      navigationBarTitleText: 'taro',
       navigationBarTextStyle: 'white',
       enablePullDownRefresh: true
     },
@@ -57,7 +53,7 @@ class App extends Component {
         selectedIconPath: "./asset/images/index_focus.png"
       },
       {
-        pagePath: "pages/more/more",
+        pagePath: "pages/usr/usr",
         text: "我的",
         iconPath: "./asset/images/burger.png",
         selectedIconPath: "./asset/images/burger_focus.png"

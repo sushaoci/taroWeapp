@@ -1,3 +1,7 @@
+/* 
+准备加个模态框？消息通知，然后确定+清零
+ */
+
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Image } from '@tarojs/components'
 import './result.scss'
@@ -11,6 +15,9 @@ export default class Result extends Component {
   }
   navigateTo(url) {
     Taro.navigateTo({ url: url })
+  }
+  temp(log){
+    console.log(log)
   }
   render() {
     return (
@@ -30,7 +37,7 @@ export default class Result extends Component {
         <View className='submit-area'>
           <View className='at-row at-row__justify--around'>
             <View className='at-col at-col-5'>
-              <AtButton type='secondary' onClick={this.navigateTo.bind(this, '/pages/complete/complete')}> 提交</AtButton>
+              <AtButton type='secondary' onClick={this.temp.bind(this,'temp')}> 提交</AtButton>
             </View>
           </View>
         </View>
