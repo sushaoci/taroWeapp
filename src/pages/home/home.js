@@ -19,7 +19,7 @@ export default class Home extends Component {
             <AtButton type='primary' onClick={this.navigateTo.bind(this, '/pages/result/result')}> 拍照记录</AtButton>
           </View>
           <View className='at-col at-col-5'>
-            <AtButton type='secondary'>相册导入</AtButton>
+            <AtButton type='secondary' onClick={this.navigateTo.bind(this, '/pages/result/result')}>相册导入</AtButton>
           </View>
         </View>
         {/* <View className='user flex-wrp'>
