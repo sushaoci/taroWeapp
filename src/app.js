@@ -30,8 +30,9 @@ class App extends Component {
   */
   config = {
     pages: [
-      'pages/home/home',
       'pages/result/result',
+      'pages/home/home',
+      // 'pages/result/result',
       'pages/usr/usr',
     ],
     window: {
