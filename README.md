@@ -1,55 +1,26 @@
-# 整合 taro-dvajs
+# 微信小程序前端-taro
 
+## how to use
 
-本项目整合了taro 和 dvajs,页面代码来自  [仿知乎小程序](https://github.com/NervJS/taro-zhihu-sample)
+### `npm install `
 
+安装依赖
 
-相关框架内容请去官网
+### `npm run dev:weapp`
 
-1. [taro](https://github.com/NervJS/taro)
-2. [dvajs](https://github.com/dvajs/dva)
+启动编译小程序
 
+> 需配合「微信开发者工具」使用
 
-### 1. 使用 npm 或者 yarn 全局安装
+## screenshot
 
-```
-npm install -g @tarojs/cli
-// 或
-yarn global add @tarojs/cli
-```
+![1](https://tva1.sinaimg.cn/large/008eGmZEgy1gmpoav5jshj31hc0u07df.jpg)
 
-### 2. 然后使用npm 或者yarn 安装依赖
+![2](https://tva1.sinaimg.cn/large/008eGmZEgy1gmpoaw6083j31hc0u0tf5.jpg)
 
-```
-npm install
-// 或
-yarn
-```
+![3](https://tva1.sinaimg.cn/large/008eGmZEgy1gmpoawsl1qj31hc0u0gv3.jpg)
 
-### 3. 开始启动编译小程序
+## 完整前后端程序
 
-```
-npm run dev:weapp
-// 或
-yarn run dev:weapp
-```
-
-### 4. 使用小程序开发工具打开dist 目录
-
-
-## 已知问题
-
-在h5端的上下拉刷新实现有问题
-
-
-我的blog地址: <https://www.forkjoin.org>
-
-关注我的微信公众号:
-
-![小草的泡码笔记](https://www.forkjoin.org/images/wxqrcode.jpg )
-
-开发QQ群 173103450
-微信群：
-
-
+https://github.com/EgbertHistorianPokling/FoodWeapp_db
 
